@@ -1,0 +1,32 @@
+﻿Đề bài: Tính Thời Gian Bay
+Mô tả:
+Một chuyến bay cất cánh lúc h1:m1 theo múi giờ UTC+7, và hạ cánh lúc h2:m2 theo múi giờ UTC+1. Hãy viết chương trình C++ để tính thời gian bay thực tế của chuyến bay, tính bằng giờ và phút, sau khi đã quy đổi sang cùng một múi giờ.
+
+Yêu cầu:
+
+Nhập 4 số nguyên: h1, m1, h2, m2 lần lượt là giờ và phút cất cánh, giờ và phút hạ cánh.
+
+Chỉ sử dụng các thao tác cơ bản: nhập, xuất, khai báo biến, kiểu dữ liệu nguyên, và các phép toán (+, -, *, /, %).
+
+Kết quả đầu ra là thời gian bay thực tế, được in ra dưới dạng x gio y phut.
+
+Gợi ý:
+
+Quy đổi giờ và phút của thời điểm cất cánh và hạ cánh sang phút UTC + 0.
+
+Lưu ý: để quy đổi sang UTC, cần trừ đi độ lệch múi giờ.
+
+Nếu thời gian hạ cánh sớm hơn thời gian cất cánh (theo UTC), giả sử chuyến bay qua đêm và hạ cánh vào ngày hôm sau.
+
+Ví dụ:
+
+Nhap gio va phut cat canh (h1 m1): 22 30
+Nhap gio và phut ha canh (h2 m2): 2 15
+Thoi gian bay: 7 gio 45 phut
+Giải thích:
+
+Cất cánh: 22h30 UTC+7 → 15h30 UTC
+
+Hạ cánh: 02h15 UTC+1 → 01h15 UTC
+
+Tính thời gian bay = (01:15 + 24:00) - 15:30 = 9 giờ 45 phút
